@@ -99,6 +99,7 @@ class PromotionItemByQuoteResourceRelationshipExpander implements PromotionItemB
          * @var \Generated\Shared\Transfer\QuoteTransfer|null $payload
          */
         $payload = $resource->getPayload();
+        /** @phpstan-ignore instanceof.alwaysTrue */
         if ($payload === null || !($payload instanceof QuoteTransfer)) {
             return new ArrayObject();
         }

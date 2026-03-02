@@ -29,10 +29,6 @@ class PromotionItemByQuoteResourceRelationshipExpander implements PromotionItemB
      */
     protected $promotionItemMapper;
 
-    /**
-     * @param \Spryker\Glue\GlueApplication\Rest\JsonApi\RestResourceBuilderInterface $restResourceBuilder
-     * @param \Spryker\Glue\DiscountPromotionsRestApi\Processor\Mapper\PromotionItemMapperInterface $promotionItemMapper
-     */
     public function __construct(
         RestResourceBuilderInterface $restResourceBuilder,
         PromotionItemMapperInterface $promotionItemMapper
@@ -107,11 +103,6 @@ class PromotionItemByQuoteResourceRelationshipExpander implements PromotionItemB
         return $payload->getPromotionItems();
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\PromotionItemTransfer $promotionItemTransfer
-     *
-     * @return string|null
-     */
     protected function findDiscountPromotionUuid(PromotionItemTransfer $promotionItemTransfer): ?string
     {
         if ($promotionItemTransfer->getUuid() !== null) {

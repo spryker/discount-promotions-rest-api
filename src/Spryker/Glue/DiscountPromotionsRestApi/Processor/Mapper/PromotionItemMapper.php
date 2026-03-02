@@ -15,12 +15,6 @@ use Generated\Shared\Transfer\RestPromotionalItemsAttributesTransfer;
 
 class PromotionItemMapper implements PromotionItemMapperInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\PromotionItemTransfer $promotionItemTransfer
-     * @param \Generated\Shared\Transfer\RestPromotionalItemsAttributesTransfer $restPromotionalItemsAttributesTransfer
-     *
-     * @return \Generated\Shared\Transfer\RestPromotionalItemsAttributesTransfer
-     */
     public function mapPromotionItemTransferToRestPromotionalItemsAttributesTransfer(
         PromotionItemTransfer $promotionItemTransfer,
         RestPromotionalItemsAttributesTransfer $restPromotionalItemsAttributesTransfer
@@ -34,12 +28,6 @@ class PromotionItemMapper implements PromotionItemMapperInterface
             ->setQuantity($promotionItemTransfer->getMaxQuantity());
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\DiscountTransfer $discountTransfer
-     * @param \Generated\Shared\Transfer\RestDiscountsAttributesTransfer $restDiscountsAttributesTransfer
-     *
-     * @return \Generated\Shared\Transfer\RestDiscountsAttributesTransfer
-     */
     public function mapDiscountPromotionToRestDiscountsAttributesTransfer(
         DiscountTransfer $discountTransfer,
         RestDiscountsAttributesTransfer $restDiscountsAttributesTransfer
@@ -55,11 +43,6 @@ class PromotionItemMapper implements PromotionItemMapperInterface
             ->setDiscountPromotionQuantity($discountPromotionTransfer->getQuantity());
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\DiscountPromotionTransfer $discountPromotionTransfer
-     *
-     * @return string|null
-     */
     protected function getAbstractSku(DiscountPromotionTransfer $discountPromotionTransfer): ?string
     {
         $abstractSku = $discountPromotionTransfer->getAbstractSku();

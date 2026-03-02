@@ -25,11 +25,6 @@ class DiscountPromotionsRestApiToDiscountPromotionFacadeBridge implements Discou
         $this->discountPromotionFacade = $discountPromotionFacade;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\DiscountPromotionCriteriaTransfer $discountPromotionCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\DiscountPromotionCollectionTransfer
-     */
     public function getDiscountPromotionCollection(DiscountPromotionCriteriaTransfer $discountPromotionCriteriaTransfer): DiscountPromotionCollectionTransfer
     {
         return $this->discountPromotionFacade->getDiscountPromotionCollection($discountPromotionCriteriaTransfer);

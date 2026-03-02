@@ -14,23 +14,11 @@ use Generated\Shared\Transfer\RestPromotionalItemsAttributesTransfer;
 
 interface PromotionItemMapperInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\PromotionItemTransfer $promotionItemTransfer
-     * @param \Generated\Shared\Transfer\RestPromotionalItemsAttributesTransfer $restPromotionalItemsAttributesTransfer
-     *
-     * @return \Generated\Shared\Transfer\RestPromotionalItemsAttributesTransfer
-     */
     public function mapPromotionItemTransferToRestPromotionalItemsAttributesTransfer(
         PromotionItemTransfer $promotionItemTransfer,
         RestPromotionalItemsAttributesTransfer $restPromotionalItemsAttributesTransfer
     ): RestPromotionalItemsAttributesTransfer;
 
-    /**
-     * @param \Generated\Shared\Transfer\DiscountTransfer $discountTransfer
-     * @param \Generated\Shared\Transfer\RestDiscountsAttributesTransfer $restDiscountsAttributesTransfer
-     *
-     * @return \Generated\Shared\Transfer\RestDiscountsAttributesTransfer
-     */
     public function mapDiscountPromotionToRestDiscountsAttributesTransfer(
         DiscountTransfer $discountTransfer,
         RestDiscountsAttributesTransfer $restDiscountsAttributesTransfer

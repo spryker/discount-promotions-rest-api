@@ -31,9 +31,6 @@ class DiscountPromotionsRestApiFacadeTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testMapCartItemRequestTransferToPersistentCartChangeTransferShouldSetUpIdDiscountPromotionInPersistentCartChangeTransfer(): void
     {
         // Arrange

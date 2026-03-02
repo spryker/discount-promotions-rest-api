@@ -12,10 +12,5 @@ use Generated\Shared\Transfer\DiscountPromotionCriteriaTransfer;
 
 interface DiscountPromotionsRestApiToDiscountPromotionFacadeInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\DiscountPromotionCriteriaTransfer $discountPromotionCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\DiscountPromotionCollectionTransfer
-     */
     public function getDiscountPromotionCollection(DiscountPromotionCriteriaTransfer $discountPromotionCriteriaTransfer): DiscountPromotionCollectionTransfer;
 }

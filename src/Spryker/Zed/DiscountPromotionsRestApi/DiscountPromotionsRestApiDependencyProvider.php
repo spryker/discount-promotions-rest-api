@@ -21,11 +21,6 @@ class DiscountPromotionsRestApiDependencyProvider extends AbstractBundleDependen
      */
     public const FACADE_DISCOUNT_PROMOTION = 'FACADE_DISCOUNT_PROMOTION';
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     public function provideBusinessLayerDependencies(Container $container): Container
     {
         $container = parent::provideBusinessLayerDependencies($container);
@@ -34,11 +29,6 @@ class DiscountPromotionsRestApiDependencyProvider extends AbstractBundleDependen
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addDiscountPromotionFacade(Container $container): Container
     {
         $container->set(static::FACADE_DISCOUNT_PROMOTION, function (Container $container) {

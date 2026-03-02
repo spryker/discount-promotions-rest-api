@@ -21,17 +21,11 @@ use Spryker\Glue\Kernel\AbstractFactory;
  */
 class DiscountPromotionsRestApiFactory extends AbstractFactory
 {
-    /**
-     * @return \Spryker\Glue\DiscountPromotionsRestApi\Processor\Mapper\PromotionItemMapperInterface
-     */
     public function createPromotionItemMapper(): PromotionItemMapperInterface
     {
         return new PromotionItemMapper();
     }
 
-    /**
-     * @return \Spryker\Glue\DiscountPromotionsRestApi\Processor\Expander\PromotionItemByQuoteResourceRelationshipExpanderInterface
-     */
     public function createPromotionItemByQuoteResourceRelationshipExpander(): PromotionItemByQuoteResourceRelationshipExpanderInterface
     {
         return new PromotionItemByQuoteResourceRelationshipExpander(
@@ -40,9 +34,6 @@ class DiscountPromotionsRestApiFactory extends AbstractFactory
         );
     }
 
-    /**
-     * @return \Spryker\Glue\DiscountPromotionsRestApi\Processor\Expander\CartItemExpanderInterface
-     */
     public function createCartItemExpander(): CartItemExpanderInterface
     {
         return new CartItemExpander();

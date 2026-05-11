@@ -1,0 +1,39 @@
+resource:
+    name: PromotionalItems
+    shortName: promotional-items
+    description: 'Promotional items (free gifts) available for a cart'
+
+    paginationEnabled: false
+
+    includableIn:
+        - resource: Carts
+          relationshipName: promotional-items
+        - resource: GuestCarts
+          relationshipName: promotional-items
+
+    properties:
+        uuid:
+            type: string
+            identifier: true
+            writable: false
+            readable: true
+            required: false
+            description: 'Unique promotional item identifier'
+            openapiContext:
+                example: 'd1c20855-3f1d-5b85-a2c5-bba1644a70d0'
+
+        sku:
+            type: string
+            writable: false
+            readable: true
+            required: false
+            description: 'Abstract product SKU of the promotional item'
+            openapiContext:
+                example: '001_25904006'
+
+        quantity:
+            type: integer
+            writable: false
+            readable: true
+            required: false
+            description: 'Maximum quantity available for this promotional item'

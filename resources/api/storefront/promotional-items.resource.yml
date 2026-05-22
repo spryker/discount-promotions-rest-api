@@ -5,12 +5,6 @@ resource:
 
     paginationEnabled: false
 
-    includableIn:
-        - resource: Carts
-          relationshipName: promotional-items
-        - resource: GuestCarts
-          relationshipName: promotional-items
-
     properties:
         uuid:
             type: string

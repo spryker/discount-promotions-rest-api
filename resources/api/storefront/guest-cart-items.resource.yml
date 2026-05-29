@@ -1,0 +1,13 @@
+resource:
+    name: GuestCartItems
+    shortName: guest-cart-items
+
+    properties:
+        idPromotionalItem:
+            type: string
+            writable: true
+            readable: false
+            required: false
+            description: 'Discount promotion UUID for promotional items'
+            openapiContext:
+                example: 'discount-promotion-uuid-example'

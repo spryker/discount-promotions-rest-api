@@ -6,6 +6,7 @@ resource:
         idPromotionalItem:
             type: string
             writable: true
+            writableOn: ['Post']
             readable: false
             required: false
             description: 'Discount promotion UUID for promotional items'

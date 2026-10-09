@@ -11,4 +11,4 @@ resource:
             required: false
             description: 'Discount promotion UUID for promotional items'
             openapiContext:
-                example: 'discount-promotion-uuid-example'
+                example: 'd1c20855-3f1d-5b85-a2c5-bba1644a70d0'
